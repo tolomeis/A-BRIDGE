@@ -26,5 +26,13 @@ PWM duty-cicle  | Motor
  When the duty cicle is 50% the motor **brakes**, it's not simply turned off, so the motor still need current to remain blocked. You can disable the bridge using the EN (ENABLE) input, that turn off the motor.
 PWM LAP needs 2 inverted PWM signals, but with this board you need only a single PWM signal, the inverted one is generated internally using a 74HC240 inverter.
 
+----------
+
 #####A-BRIDGE pinout
-![Pinout](https://raw.githubusercontent.com/tolomeis/A-BRIDGE/master/Resources/Pinout.jpg)
+<img src="https://raw.githubusercontent.com/tolomeis/A-BRIDGE/master/Resources/Pinout.jpg" width="600">
+
+####Schematic & layout
+
+<img src="https://raw.githubusercontent.com/tolomeis/A-BRIDGE/master/Resources/PCB.png" width="400">
+
+<img src="https://raw.githubusercontent.com/tolomeis/A-BRIDGE/master/Resources/Schematic.png" width="600">
