@@ -9,7 +9,7 @@ The A-BRIDGE is a dual 3.5A motor driver with built-in LAP signal inverter.
 
 > - Based on [A4950](http://www.allegromicro.com/~/media/Files/Datasheets/A4950-Datasheet.ashx) full-bridge DMOS PWM driver
 > - Control 2 brushed motor with a maximum voltage of 40V
-> - Delivers up to 3A per motor (3.5A if dissipated and 5A peack)
+> - Delivers up to 3A per motor (3.5A if dissipated and 5A peak)
 > - Built-in inverted PWM signal generator for LAP control with [74HC240](http://www.nxp.com/documents/data_sheet/74HC_HCT240.pdf)
 
 ####WARNING: this board should not be used with motor that has a filter capacitor. To know if your motor has filter capacitors see the documentation of your motor, usually the acronym WOC stand for Without capacitors.
