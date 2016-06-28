@@ -26,6 +26,7 @@ Basically this is a H Bridge, the only difference between this and the other typ
 |100%            | Full Forwards|
 
 The ENABLE pin is used to disable the bridge. When LOW the bridge is operating at normal condition, when HIGH the bridge will enter in low power standby mode after 1ms. This is useful because the *brake* condition, with duty cycle 50%, does not means that the motor is turned off, but means that the motor is **braked, and it will draw current to remain still**. This is the worst efficience condition for the bridge, then, unless with small motor, it will heat up very fast. I recommend you not to remain in *brake* conditon for more than a half a minute. Therefore, for simply stop the motor you can set duty cicle to 50% and then disable the bridge with EN pin.
+
 <img src="https://raw.githubusercontent.com/tolomeis/A-BRIDGE/master/Resources/Pinout.jpg" width="600">
 
 
