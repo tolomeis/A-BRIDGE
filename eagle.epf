@@ -7,6 +7,8 @@ Desktop="Desktop"
 
 [Globals]
 AutoSaveProject=1
+UsedLibrary="C:/Users/Simone/Documents/vpad.lbr"
+UsedLibrary="C:/Users/Simone/Documents/progettokicad/vpad.lbr"
 
 [Win_1]
 Type="Control Panel"
