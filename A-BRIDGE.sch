@@ -8127,6 +8127,33 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <text x="-0.785" y="-1.865" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.305" y1="-0.15" x2="0.305" y2="0.15" layer="51"/>
 </package>
+<package name="UD-6,3X7,7_NICHICON_HS">
+<description>&lt;b&gt;ALUMINUM ELECTROLYTIC CAPACITORS&lt;/b&gt; UD Series 6.3 x 7.7 mm&lt;p&gt;
+Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
+<wire x1="-3.25" y1="3.25" x2="2.45" y2="3.25" width="0.1016" layer="51"/>
+<wire x1="2.45" y1="3.25" x2="3.25" y2="2.45" width="0.1016" layer="51"/>
+<wire x1="3.25" y1="2.45" x2="3.25" y2="-2.45" width="0.1016" layer="51"/>
+<wire x1="3.25" y1="-2.45" x2="2.45" y2="-3.25" width="0.1016" layer="51"/>
+<wire x1="2.45" y1="-3.25" x2="-3.25" y2="-3.25" width="0.1016" layer="51"/>
+<wire x1="-3.25" y1="-3.25" x2="-3.25" y2="3.25" width="0.1016" layer="51"/>
+<wire x1="-3" y1="0.775" x2="2.975" y2="0.85" width="0.1016" layer="21" curve="-149.753145"/>
+<wire x1="-3.25" y1="0.8" x2="-3.25" y2="3.25" width="0.1016" layer="21"/>
+<wire x1="-3.25" y1="3.25" x2="2.45" y2="3.25" width="0.1016" layer="21"/>
+<wire x1="2.45" y1="3.25" x2="3.25" y2="2.45" width="0.1016" layer="21"/>
+<wire x1="3.25" y1="-2.45" x2="2.45" y2="-3.25" width="0.1016" layer="21"/>
+<wire x1="2.45" y1="-3.25" x2="-3.25" y2="-3.25" width="0.1016" layer="21"/>
+<wire x1="-3.25" y1="-3.25" x2="-3.25" y2="-0.7" width="0.1016" layer="21"/>
+<wire x1="3" y1="-0.775" x2="-2.975" y2="-0.85" width="0.1016" layer="21" curve="-149.753145"/>
+<circle x="0" y="0" radius="3.1001" width="0.1016" layer="51"/>
+<smd name="-" x="-2.35" y="0" dx="3.562" dy="1.254" layer="1"/>
+<smd name="+" x="2.35" y="0" dx="3.562" dy="1.254" layer="1"/>
+<text x="-3.175" y="3.81" size="1.016" layer="25">&gt;NAME</text>
+<text x="-3.175" y="-4.445" size="1.016" layer="27">&gt;VALUE</text>
+<polygon width="0.1016" layer="51">
+<vertex x="-2.2" y="2.15" curve="88.581463"/>
+<vertex x="-2.2" y="-2.15"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="CPOL">
@@ -9734,6 +9761,15 @@ Source: http://www.vishay.com/docs/10129/hpc0201a.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="UD-6,3X7,7-HS" package="UD-6,3X7,7_NICHICON_HS">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="C-EU" prefix="C" uservalue="yes">
@@ -10561,8 +10597,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="IC1" library="74xx-eu" deviceset="74*240" device="DW" technology="HC"/>
 <part name="SV1" library="con-lsta" deviceset="FE06-1" device=""/>
 <part name="SV2" library="con-lsta" deviceset="FE06-1" device=""/>
-<part name="C1" library="rcl" deviceset="CPOL-EU" device="UD-6,3X7,7" value="100u"/>
-<part name="C2" library="rcl" deviceset="CPOL-EU" device="UD-6,3X7,7" value="100u"/>
+<part name="C1" library="rcl" deviceset="CPOL-EU" device="UD-6,3X7,7-HS" value="100u"/>
+<part name="C2" library="rcl" deviceset="CPOL-EU" device="UD-6,3X7,7-HS" value="100u"/>
 <part name="C3" library="rcl" deviceset="C-EU" device="C0805K" value="220n"/>
 <part name="C4" library="rcl" deviceset="C-EU" device="C0805K" value="220n"/>
 <part name="C5" library="rcl" deviceset="C-EU" device="C1206K" value="100n"/>
