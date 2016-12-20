@@ -2,12 +2,12 @@
 Source files for the A-BRIDGE motor driver board
 
 
-The A-Bridge is a small dual H-BRIDGE based on the integrated DMOS full-bridge A5950, capable to run 2 motors with a continuos current of 3A (3.5 if dissipated) and a peak current of 5A. The bridge operates in PWM LAP, so, compared to the typical PWM SM control, you have less resolution but a more precise control of the speed. The inverted PWM signal required for LAP control is generated internally with a 74HC240 tri-state inverter, that also gives you the possibility to disable the bridge and the motor using the Enable input.
+The A-Bridge is a small dual H-BRIDGE based on the integrated DMOS full-bridge A5950, capable to run 2 motors with a continuos current of 3A (3.5 with a heat dissipator) and a peak current of 5A. The bridge operates in PWM LAP, so, compared to the typical PWM SM control, you have less resolution but a more precise control of the speed. The inverted PWM signal required for LAP control is generated internally with a 74HC240 tri-state inverter, that also gives you the possibility to disable the bridge and the motor using the Enable input.
 
 ####Features:
- + Drives 2 brushed DC motors
+ + Control 2 brushed DC motors
  + Input voltage: 8-40V
- + Output current: 3A continuos, 3.5 if dissipated, 5A peak
+ + Output current: 3A continuos, 3.5 with heat dissipator, 5A peak
  + Overcurrent  short circuit protection
  + Enable input to disable the bridge
 
